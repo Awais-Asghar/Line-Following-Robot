@@ -65,7 +65,5 @@ This code is for a line-following robot, designed to navigate a path marked by a
 - Adjust the `Forward_Speed` and `Turn_Speed` variables to fine-tune the robot's movement speed and turning capability.
 
 ### Author:
-This code was written by [Your Name/Organization] for educational purposes.
+This code was written by Awais Asghar for educational purposes.
 
-### License:
-This project is licensed under [License Name/Information].
