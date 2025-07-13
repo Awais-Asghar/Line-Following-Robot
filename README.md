@@ -7,7 +7,7 @@
 ![IDE](https://img.shields.io/badge/IDE-Arduino%20IDE-success.svg)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
-![Image](https://github.com/user-attachments/assets/10ed23da-3b99-4516-9cb1-d6d7b19261ce)
+![Image](https://github.com/user-attachments/assets/68b16f59-69f6-4019-bb5e-03aada6ab933)
 
 ---
 
@@ -84,6 +84,59 @@ digitalWrite(IN2, LOW);
 
 ---
 
+## How to Charge Lithium-Ion
+
+### What You Need:
+- **TP4056 charging module** (with or without protection circuit)
+- **Lithium-Ion battery** (typically 3.7V, like an 18650 cell)
+- **Power source** (5V via USB cable or 5V adapter)
+
+###  Wiring Connections
+
+| TP4056 Pin | Connects To           | Description                      |
+|------------|-----------------------|----------------------------------|
+| **BAT+**   | Battery Positive (+)  | Connect to battery's positive terminal |
+| **BAT-**   | Battery Negative (–)  | Connect to battery's negative terminal |
+| **IN+**    | 5V Power Positive     | USB VCC or 5V adapter            |
+| **IN-**    | 5V Power Ground       | USB GND or adapter GND           |
+| **OUT+**   | Output Positive (Optional) | Same as BAT+ if present     |
+| **OUT-**   | Output Negative (Optional) | Same as BAT– if present     |
+
+
+### Charging Status (LED Indicators)
+
+- 🔴 **Red LED ON** → Charging
+- 🟢 **Blue/Green LED ON** → Fully Charged (approx. 4.2V)
+
+### TP4056 Specifications
+
+- **Input Voltage:** 4.5V – 5.5V (recommended: 5V)
+- **Charging Cut-off Voltage:** 4.2V
+- **Max Charging Current:** 1A (default, adjustable by changing onboard resistor)
+
+### Charging Steps
+
+1. Connect **BAT+** and **BAT-** to the Lithium-ion battery terminals.
+2. Connect **IN+** and **IN-** to a 5V power supply (USB or adapter).
+3. Observe LED indicators:
+   - Red = Charging
+   - Green/Blue = Fully Charged
+4. Disconnect power once fully charged (unless using protected module).
+
+
+### Safety Tips
+
+-  Never leave charging unattended.
+-  Use only **genuine 3.7V Li-ion batteries**.
+-  Avoid **short circuits** on BAT terminals.
+-  **Do not reverse polarity** — it can damage the module and the battery.
+-  Use **TP4056 with protection** for safer charging and discharging.
+
+![Image](https://github.com/user-attachments/assets/ec110f7a-28bc-419d-adfa-fa863a73bb27)
+
+---
+
+
 
 ## Software Requirements
 
@@ -117,7 +170,6 @@ The robot makes decisions based on the IR sensor input:
 - **Both HIGH** → **Stop**
 
 
-
 ## Function Descriptions
 
 - `moveForward()` — Moves robot forward by setting both motors in forward direction.
@@ -125,6 +177,12 @@ The robot makes decisions based on the IR sensor input:
 - `turnRight()` — Rotates robot right by reversing the left motor and driving the right forward.
 - `stopMotors()` — Stops both motors immediately.
 
+
+## Circuit Diagram
+
+![Image](https://github.com/user-attachments/assets/5ab1b37e-b441-4b22-bca6-c23096edca74)
+
+--- 
 
 ## How to Run
 
@@ -135,8 +193,9 @@ The robot makes decisions based on the IR sensor input:
 5. Adjust motor speeds if needed in `Forward_Speed` and `Turn_Speed`.
 
 
-## Demonstration / Output
+## Demonstration 
 
+![Image](https://github.com/user-attachments/assets/68b16f59-69f6-4019-bb5e-03aada6ab933)
 
 ---
 
