@@ -7,7 +7,7 @@
 ![IDE](https://img.shields.io/badge/IDE-Arduino%20IDE-9cf.svg)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
-![Image](https://github.com/user-attachments/assets/68b16f59-69f6-4019-bb5e-03aada6ab933)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/106c5ef6-db06-4344-b7d1-06591e89e0e2" />
 
 ---
 
