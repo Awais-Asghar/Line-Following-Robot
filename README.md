@@ -137,7 +137,6 @@ digitalWrite(IN2, LOW);
 ---
 
 
-
 ## Software Requirements
 
 - Arduino IDE
@@ -206,18 +205,13 @@ The robot makes decisions based on the IR sensor input:
 - Industrial line-following transport bots
 - Maze-solving robots (with enhancements)
 
----
 
 ## Future Improvements
 
-- ➕ Add **PID Control** to reduce overshooting and create smoother navigation.
-- ➕ Integrate **3 or more IR sensors** for better accuracy and tighter turns.
-- ➕ Add **buzzer or LED indicators** to signal path loss or turns.
-- ➕ Use **Bluetooth module** to control robot manually if needed.
-- ➕ Introduce **EEPROM-based line calibration** for better performance.
-- ➕ Add a **camera module** and evolve toward **vision-based line following**.
+ ➕ Add **PID Control** to reduce overshooting and create smoother navigation.
+ ➕ Introduce **EEPROM-based line calibration** for better performance.
+ ➕ Add a **camera module** and evolve toward **vision-based line following**.
 
----
 
 ## Troubleshooting / Common Issues
 
@@ -226,14 +220,11 @@ The robot makes decisions based on the IR sensor input:
 - **Sensors not detecting line:** Ensure correct surface contrast and proper IR sensor height.
 - **Random behavior:** Use Serial Monitor to debug sensor readings.
 
----
 
 ## Credits / Acknowledgements
 
 Developed by **Awais Asghar** as part of hands-on robotics projects.  
-Inspired by Arduino open-source tutorials and DIY robotics community.
 
----
 
 ## License
 
